@@ -79,7 +79,7 @@ RUN set -ex \
 	&& apt-key adv --batch --fetch-keys http://nginx.org/keys/nginx_signing.key \
 	&& echo "deb http://nginx.org/packages/mainline/ubuntu/ bionic nginx" >> /etc/apt/sources.list \
 	&& apt-key adv --batch --fetch-keys https://www.postgresql.org/media/keys/ACCC4CF8.asc \
-	&& echo 'deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
+	&& echo 'deb https://apt-archive.postgresql.org/pub/repos/apt bionic-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
 	&& apt-key adv --batch --fetch-keys https://deb.nodesource.com/gpgkey/nodesource.gpg.key \
 	&& echo 'deb https://deb.nodesource.com/node_8.x bionic main' > /etc/apt/sources.list.d/nodesource.list \
 	&& apt-key adv --batch --fetch-keys https://dl.yarnpkg.com/debian/pubkey.gpg \
